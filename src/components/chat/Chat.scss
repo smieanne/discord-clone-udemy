@@ -1,0 +1,47 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: rgb(49,50,53); 
+  height: 100vh;
+
+  .chatMessage{
+    height: 100vh; //メッセージボックスを画面下に固定
+    overflow-y: scroll;
+  }
+
+  .chatInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #474b53;
+    border-radius: 5px;
+    margin: 20px;
+    color: lightgray;
+
+
+    form {
+      flex-grow: 1;
+      input {
+        padding: 15px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: large;
+        width: 100%;
+      }
+      .chatInputButton { 
+        display:  none; //打ち込んでエンターキーで送信したいので送信ボタンをnone
+      }
+    }
+
+    .chatInputIcons {
+      .MuiSvgIcon-root{
+        padding: 5px;
+      }
+    }
+
+  }
+}
